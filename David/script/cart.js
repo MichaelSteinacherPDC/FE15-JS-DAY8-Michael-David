@@ -49,11 +49,13 @@ const flowers = [
     },
 ];
 
+//current object formatter
 const currencyFormater = new Intl.NumberFormat("de-AT", {
     style: "currency",
     currency: "EUR",
 });
 
+//select the products row and add items dynamically
 let flowersRow = document.querySelector(".products");
 
 for (let flower of flowers)
@@ -94,7 +96,7 @@ for (let i = 0; i < addToCartBtn.length; i++) {
     }); 
 }
 
-
+//creates card flowers 
 const flowerCarts = () => {
     document.querySelector(".cart-items").innerHTML = "";
 
